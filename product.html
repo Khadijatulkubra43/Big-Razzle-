@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Travel Destinations | Big Razzle International</title>
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+    
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Fixed Navigation -->
+    <header id="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-globe-americas"></i>
+                </div>
+                <span>Big Razzle</span>
+            </a>
+            
+            <div class="nav-container">
+                 <nav>
+                    <ul class="nav-links">
+                        <li><a href="index.html" >Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="service.html">Service</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="product.html"class="active">Product</a></li>
+                         <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <a href="#support" class="nav-cta">Free Sample</a>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation Overlay -->
+        <div class="mobile-overlay" id="mobileOverlay"></div>
+        
+        <!-- Mobile Navigation Menu -->
+        <div class="mobile-nav" id="mobileNav">
+            <button class="close-menu" id="closeMenuBtn">
+                <i class="fas fa-times"></i>
+            </button>
+            <ul class="mobile-nav-links">
+               <li><a href="index.html" >Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="service.html">Service</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="product.html"class="active">Product</a></li>
+                         <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="#support" class="nav-cta mobile-nav-cta">Free Sample</a>
+        </div>
+    </header>
+
+    <!-- Product Hero Section -->
+    <section class="product-hero" id="home">
+        <div class="container">
+            <div class="product-hero-content">
+                <h1 class="product-hero-title">Luxury Travel Destinations Designed for You</h1>
+                <p class="product-hero-subtitle">Explore premium travel packages with expert guidance, transparent pricing, and seamless booking.</p>
+                <div class="product-hero-btns">
+                    <a href="#destinations" class="btn-primary">
+                        <i class="fas fa-compass"></i>
+                        Browse Packages
+                    </a>
+                    <a href="#support" class="btn-secondary">
+                        <i class="fas fa-headset"></i>
+                        Talk to a Travel Expert
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destination Categories Filter -->
+    <section id="destinations">
+        <div class="container">
+            <div class="filter-section">
+                <h2 class="filter-title">Find Your Perfect Getaway</h2>
+                <div class="filter-options">
+                    <button class="filter-btn active" data-filter="all">All Destinations</button>
+                    <button class="filter-btn" data-filter="popular">Popular Destinations</button>
+                    <button class="filter-btn" data-filter="student">Student Favorites</button>
+                    <button class="filter-btn" data-filter="luxury">Luxury Escapes</button>
+                    <button class="filter-btn" data-filter="adventure">Adventure Trips</button>
+                    <button class="filter-btn" data-filter="cultural">Cultural Experiences</button>
+                    <button class="filter-btn" data-filter="budget">Budget-Friendly Luxury</button>
+                </div>
+            </div>
+            
+            <!-- Products Grid -->
+            <div class="products-grid">
+                <!-- Paris Card -->
+                <div class="product-card" data-category="popular luxury cultural">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Paris, France">
+                        <div class="product-badge">Most Popular</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Paris Luxury Experience</h3>
+                        <span class="destination">Paris, France</span>
+                        <p>Romantic luxury & iconic culture. Experience the City of Light with premium accommodations and exclusive cultural tours.</p>
+                        <div class="product-meta">
+                            <div class="product-duration">
+                                <i class="far fa-calendar"></i>
+                                <span>7 Days / 6 Nights</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="starting">Starting from</span>
+                                $2,499
+                            </div>
+                        </div>
+                        <div class="product-actions">
+                            <a href="#" class="btn-primary">
+                                <i class="fas fa-eye"></i>
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dubai Card -->
+                <div class="product-card" data-category="popular luxury">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Dubai, UAE">
+                        <div class="product-badge">Luxury Escape</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Dubai Modern Luxury</h3>
+                        <span class="destination">Dubai, UAE</span>
+                        <p>Modern lifestyle & premium comfort. Experience luxury skyscrapers, desert adventures, and world-class shopping.</p>
+                        <div class="product-meta">
+                            <div class="product-duration">
+                                <i class="far fa-calendar"></i>
+                                <span>8 Days / 7 Nights</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="starting">Starting from</span>
+                                $3,199
+                            </div>
+                        </div>
+                        <div class="product-actions">
+                            <a href="#" class="btn-primary">
+                                <i class="fas fa-eye"></i>
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Bali Card -->
+                <div class="product-card" data-category="student adventure budget">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Bali, Indonesia">
+                        <div class="product-badge">Student Favorite</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Bali Tropical Retreat</h3>
+                        <span class="destination">Bali, Indonesia</span>
+                        <p>Relaxing retreats & nature. Luxury beachfront villas, cultural immersion, and adventure activities in paradise.</p>
+                        <div class="product-meta">
+                            <div class="product-duration">
+                                <i class="far fa-calendar"></i>
+                                <span>10 Days / 9 Nights</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="starting">Starting from</span>
+                                $1,899
+                            </div>
+                        </div>
+                        <div class="product-actions">
+                            <a href="#" class="btn-primary">
+                                <i class="fas fa-eye"></i>
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Istanbul Card -->
+                <div class="product-card" data-category="cultural adventure">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Istanbul, Turkey">
+                        <div class="product-badge">Cultural Gem</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Istanbul Historical Journey</h3>
+                        <span class="destination">Istanbul, Turkey</span>
+                        <p>History, food & elegance. Where East meets West with luxury accommodations and authentic cultural experiences.</p>
+                        <div class="product-meta">
+                            <div class="product-duration">
+                                <i class="far fa-calendar"></i>
+                                <span>6 Days / 5 Nights</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="starting">Starting from</span>
+                                $1,799
+                            </div>
+                        </div>
+                        <div class="product-actions">
+                            <a href="#" class="btn-primary">
+                                <i class="fas fa-eye"></i>
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tokyo Card -->
+                <div class="product-card" data-category="cultural adventure student">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Tokyo, Japan">
+                        <div class="product-badge">New & Trending</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Tokyo Urban Adventure</h3>
+                        <span class="destination">Tokyo, Japan</span>
+                        <p>Modern metropolis meets ancient tradition. Experience cutting-edge technology and rich cultural heritage.</p>
+                        <div class="product-meta">
+                            <div class="product-duration">
+                                <i class="far fa-calendar"></i>
+                                <span>9 Days / 8 Nights</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="starting">Starting from</span>
+                                $2,899
+                            </div>
+                        </div>
+                        <div class="product-actions">
+                            <a href="#" class="btn-primary">
+                                <i class="fas fa-eye"></i>
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Swiss Alps Card -->
+                <div class="product-card" data-category="adventure luxury">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Swiss Alps">
+                        <div class="product-badge">Adventure</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Swiss Alps Adventure</h3>
+                        <span class="destination">Swiss Alps</span>
+                        <p>Mountain luxury & alpine adventures. Experience breathtaking landscapes with premium chalet accommodations.</p>
+                        <div class="product-meta">
+                            <div class="product-duration">
+                                <i class="far fa-calendar"></i>
+                                <span>7 Days / 6 Nights</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="starting">Starting from</span>
+                                $2,699
+                            </div>
+                        </div>
+                        <div class="product-actions">
+                            <a href="#" class="btn-primary">
+                                <i class="fas fa-eye"></i>
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Package Details Section -->
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>What's Included in Your Package</h2>
+                <p>Our luxury travel packages are designed for comfort, convenience, and unforgettable experiences</p>
+            </div>
+            
+            <div class="package-details">
+                <div class="details-card">
+                    <h3><i class="fas fa-check-circle"></i> Package Inclusions</h3>
+                    <ul class="inclusions-list">
+                        <li>Luxury accommodation at premium hotels</li>
+                        <li>Guided tours & exclusive cultural experiences</li>
+                        <li>Private airport transfers in luxury vehicles</li>
+                        <li>24/7 expert travel support throughout your trip</li>
+                        <li>Custom itinerary planning tailored to your interests</li>
+                        <li>Daily breakfast and select gourmet meals</li>
+                        <li>Local transportation passes and city cards</li>
+                        <li>Travel concierge service for reservations</li>
+                    </ul>
+                </div>
+                
+                <div class="details-card">
+                    <h3><i class="fas fa-plus-circle"></i> Optional Add-ons</h3>
+                    <ul class="addons-list">
+                        <li>International flight booking & upgrades</li>
+                        <li>Comprehensive travel insurance coverage</li>
+                        <li>Visa application assistance service</li>
+                        <li>Exclusive local experiences & workshops</li>
+                        <li>Private tour guides & translators</li>
+                        <li>Luxury car rental with driver</li>
+                        <li>Spa treatments & wellness packages</li>
+                        <li>Fine dining reservations at top restaurants</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Book With Us Section -->
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>Travel With Confidence</h2>
+                <p>Why thousands of students choose Big Razzle International for their luxury travel</p>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">💙</div>
+                    <h3>Trusted by Students</h3>
+                    <p>Thousands of student travelers have trusted us with their luxury travel experiences worldwide.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">🤝</div>
+                    <h3>Real Human Support</h3>
+                    <p>No bots, only real travel experts who understand your needs and provide personalized guidance.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">📱</div>
+                    <h3>Easy & Secure Booking</h3>
+                    <p>Simple booking process with secure payments and transparent pricing, no hidden fees.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">🔍</div>
+                    <h3>Transparent Details</h3>
+                    <p>Clear package details, inclusions, and pricing so you know exactly what you're getting.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">🌍</div>
+                    <h3>Handpicked Destinations</h3>
+                    <p>Curated luxury destinations selected for safety, experience quality, and student appeal.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How Booking Works -->
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>Simple Steps to Your Dream Trip</h2>
+                <p>Our streamlined process makes luxury travel planning simple and stress-free</p>
+            </div>
+            
+            <div class="booking-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Choose Your Destination</h3>
+                    <p>Browse our curated luxury travel packages or customize your own itinerary.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Talk to Our Expert</h3>
+                    <p>Connect with a travel specialist who understands student needs and luxury travel.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Customize Your Plan</h3>
+                    <p>Tailor your package with preferred accommodations, activities, and experiences.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Book Securely</h3>
+                    <p>Complete your booking with our secure payment system and receive confirmation.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <h3>Travel Stress-Free</h3>
+                    <p>Enjoy your journey with 24/7 support and expert guidance throughout.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews & Social Proof -->
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>What Our Travelers Say</h2>
+                <p>Real experiences from students who have traveled with Big Razzle International</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        Big Razzle planned everything perfectly for my Paris trip. The luxury accommodations were amazing, and I felt supported throughout the entire journey. Their attention to detail made all the difference!
+                    </div>
+                    <div class="testimonial-author">— Sarah, College Student</div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        Luxury travel made simple and affordable. As a student, I never thought I could experience such premium travel, but Big Razzle made it possible with their student-friendly packages and transparent pricing.
+                    </div>
+                    <div class="testimonial-author">— Michael, Graduate Student</div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        The Bali retreat package was absolutely perfect. From the moment I booked to my return, everything was seamless. The 24/7 support gave me peace of mind as a solo traveler.
+                    </div>
+                    <div class="testimonial-author">— Jessica, Travel Enthusiast</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support & Help Section -->
+    <section id="support">
+        <div class="container">
+            <div class="support-section">
+                <div class="support-content">
+                    <h2 class="section-title" style="color: white; margin-bottom: 30px;">Need Help Choosing a Package?</h2>
+                    <p style="font-size: 1.2rem; color: var(--text-light); margin-bottom: 40px; max-width: 700px; margin-left: auto; margin-right: auto;">
+                        Our travel experts are always ready to guide you and answer your questions. Get personalized recommendations based on your preferences and budget.
+                    </p>
+                    <div class="support-btns">
+                        <a href="#" class="btn-primary">
+                            <i class="fas fa-comments"></i>
+                            Chat With Expert
+                        </a>
+                        <a href="#" class="btn-secondary">
+                            <i class="fas fa-gift"></i>
+                            Request a Free Sample
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section>
+        <div class="container">
+            <div class="final-cta">
+                <h2 style="font-size: 3rem; margin-bottom: 30px; background: linear-gradient(to right, #ffffff, var(--light-blue)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                    Your Luxury Journey Starts Here
+                </h2>
+                <p style="font-size: 1.2rem; color: var(--text-light); margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Discover more incredible destinations and start planning your perfect luxury getaway today.
+                </p>
+                <a href="#destinations" class="btn-primary" style="padding: 20px 50px; font-size: 1.2rem;">
+                    <i class="fas fa-globe-americas"></i>
+                    Explore More Destinations
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Big Razzle International</h3>
+                    <p>Providing luxury travel destinations with easy booking and expert support for college students worldwide.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Destinations</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-envelope"></i> support@bigrazzle.com</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Travel Street</li>
+                        <li>Suite 100, New York, NY 10001</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" id="footer-privacy-btn">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Student Discounts</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Big Razzle International. All rights reserved. Luxury travel for the modern student explorer.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="product.js"></script>
+</body>
+</html>

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Razzle International | Luxury Travel for Students</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+    
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Fixed Navigation -->
+    <header id="header">
+        <div class="header-container">
+            <a href="#home" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-globe-americas"></i>
+                </div>
+                <span>Big Razzle</span>
+            </a>
+            
+            <div class="nav-container">
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="service.html">Service</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="product.html">Product</a></li>
+                         <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <a href="#cta" class="nav-cta">Free Sample</a>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation Overlay -->
+        <div class="mobile-overlay" id="mobileOverlay"></div>
+        
+        <!-- Mobile Navigation Menu -->
+        <div class="mobile-nav" id="mobileNav">
+            <button class="close-menu" id="closeMenuBtn">
+                <i class="fas fa-times"></i>
+            </button>
+            <ul class="mobile-nav-links">
+                 <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="service.html">Service</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="product.html">Product</a></li>
+                         <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="#cta" class="nav-cta mobile-nav-cta">Free Sample</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-tagline">
+                    <i class="fas fa-star"></i>
+                    Luxury Travel for College Students
+                </div>
+                <h1 class="hero-title">Luxury Travel Made Simple.<br>Memories Made Forever.</h1>
+                <p class="hero-subtitle">Discover world-class travel destinations with expert guidance, easy booking, and support you can trust — designed especially for students who love to explore.</p>
+                <div class="hero-btns">
+                    <a href="#cta" class="btn-primary">
+                        <i class="fas fa-gift"></i>
+                        Get Your Free Travel Sample
+                    </a>
+                    <a href="#destinations" class="btn-secondary">Explore Destinations</a>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="floating-card">
+                    <div class="card-content">
+                        <div style="padding: 40px;">
+                            <h3 style="font-size: 1.8rem; margin-bottom: 15px; color: white;">Sample Itinerary: Paris Luxury Experience</h3>
+                            <p style="color: var(--text-light); margin-bottom: 20px;">7 days of luxury accommodations, gourmet dining, and exclusive cultural experiences tailored for students.</p>
+                            <div style="background: var(--gradient-gold); color: var(--dark-bg); padding: 10px 20px; border-radius: 30px; display: inline-block; font-weight: 700;">FREE SAMPLE</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Big Razzle Section -->
+    <section id="why">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Students Choose Big Razzle International</h2>
+                <p>We combine luxury travel with student-friendly features to create unforgettable experiences</p>
+            </div>
+            
+            <div class="value-props">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Luxury Destinations</h3>
+                    <p>Handpicked premium travel experiences at the world's most exciting locations.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Expert Support</h3>
+                    <p>Real travel experts guide you at every step, from planning to your return home.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Easy Booking</h3>
+                    <p>Simple, fast, and stress-free reservations with our intuitive booking platform.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Student-Friendly</h3>
+                    <p>Affordable luxury with transparent pricing and special student discounts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Destinations Section -->
+    <section id="destinations">
+        <div class="container">
+            <div class="section-title">
+                <h2>Explore Our Luxury Travel Experiences</h2>
+                <p>From iconic cities to hidden gems, our destinations are curated for unforgettable experiences and maximum comfort.</p>
+            </div>
+            
+            <div class="destinations-grid">
+                <div class="destination-card">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Paris">
+                    </div>
+                    <div class="destination-info">
+                        <h3>Paris, France</h3>
+                        <p>Romance, culture, and luxury in the City of Light.</p>
+                        <div class="tag">Romance & Culture</div>
+                    </div>
+                </div>
+                
+                <div class="destination-card">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Dubai">
+                    </div>
+                    <div class="destination-info">
+                        <h3>Dubai, UAE</h3>
+                        <p>Modern luxury, towering skyscrapers, and desert adventures.</p>
+                        <div class="tag">Modern Luxury</div>
+                    </div>
+                </div>
+                
+                <div class="destination-card">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Bali">
+                    </div>
+                    <div class="destination-info">
+                        <h3>Bali, Indonesia</h3>
+                        <p>Tropical paradise with luxury resorts and spiritual retreats.</p>
+                        <div class="tag">Relax & Reconnect</div>
+                    </div>
+                </div>
+                
+                <div class="destination-card">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Istanbul">
+                    </div>
+                    <div class="destination-info">
+                        <h3>Istanbul, Turkey</h3>
+                        <p>Where ancient history meets modern luxury and style.</p>
+                        <div class="tag">History Meets Style</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 50px;">
+                <a href="#contact" class="btn-primary">View All Destinations</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team">
+        <div class="container">
+            <div class="section-title">
+                <h2>Meet the People Behind Your Perfect Trip</h2>
+                <p>At Big Razzle International, our experienced travel consultants and planners work together to ensure every journey is smooth, safe, and unforgettable.</p>
+            </div>
+            
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Experienced Professionals</h3>
+                    <p>Our team has years of experience in luxury travel planning and student travel coordination.</p>
+                </div>
+                
+                <div class="team-card">
+                    <div class="team-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3>Personalized Planning</h3>
+                    <p>Every trip is customized to your preferences, budget, and travel style.</p>
+                </div>
+                
+                <div class="team-card">
+                    <div class="team-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Round-the-clock customer assistance before, during, and after your trip.</p>
+                </div>
+                
+                <div class="team-card">
+                    <div class="team-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Honest & Transparent</h3>
+                    <p>No hidden costs, just honest advice and transparent pricing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how">
+        <div class="container">
+            <div class="section-title">
+                <h2>Plan Your Dream Trip in 3 Easy Steps</h2>
+                <p>Our simple process makes luxury travel accessible and stress-free for every student</p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Choose Your Destination</h3>
+                    <p>Browse luxury travel packages designed for comfort and fun.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Get Expert Guidance</h3>
+                    <p>Our team helps customize your trip and answers all your questions.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Travel with Confidence</h3>
+                    <p>Enjoy a stress-free journey with full support before and during travel.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>What Travelers Say About Us</h2>
+                <p>Hear from students who have experienced luxury travel with Big Razzle International</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        Big Razzle made my first international trip smooth and stress-free. The 24/7 support was amazing!
+                    </div>
+                    <div class="testimonial-author">— College Student, New York</div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        Luxury travel with amazing support. The Paris itinerary was perfectly tailored for my budget. Highly recommended!
+                    </div>
+                    <div class="testimonial-author">— Travel Enthusiast, California</div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        As a student, I never thought I could afford luxury travel. Big Razzle proved me wrong with their amazing student packages!
+                    </div>
+                    <div class="testimonial-author">— Graduate Student, Texas</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta">
+        <div class="container">
+            <div class="cta-section">
+                <div class="cta-content">
+                    <h2 class="cta-title">Not Ready to Book Yet? Start With a Free Travel Sample</h2>
+                    <p class="cta-subtitle">Get a free destination guide or sample itinerary to see how Big Razzle International plans luxury travel just for you.</p>
+                    <a href="#" class="btn-primary">
+                        <i class="fas fa-envelope"></i>
+                        Order Your Free Sample
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-cta">
+                <h2 style="font-size: 2.2rem; margin-bottom: 20px;">Your Journey Deserves Luxury, Care, and Trust.</h2>
+                <div style="display: flex; gap: 20px; justify-content: center; margin-top: 30px; flex-wrap: wrap;">
+                    <a href="#cta" class="btn-primary">Get Free Sample</a>
+                    <a href="mailto:support@bigrazzle.com" class="btn-secondary">Contact Support</a>
+                </div>
+            </div>
+            
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Big Razzle International</h3>
+                    <p>Providing luxury travel destinations with easy booking and expert support for college students worldwide.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#why">Why Big Razzle</a></li>
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#team">Our Team</a></li>
+                        <li><a href="#how">How It Works</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-envelope"></i> support@bigrazzle.com</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Travel Street</li>
+                        <li>Suite 100, New York, NY 10001</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" id="footer-privacy-btn">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Student Discounts</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Big Razzle International. All rights reserved. Luxury travel for the modern student explorer.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Privacy Policy Modal -->
+    <div class="privacy-modal" id="privacyModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Privacy Policy</h3>
+                <button class="close-modal" id="closeModalBtn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h4 style="margin-bottom: 15px; color: var(--neon-blue);">Your Data is Safe With Us</h4>
+                <p style="margin-bottom: 20px;">At Big Razzle International, we are committed to protecting your privacy and ensuring the security of your personal information. Our privacy policy outlines how we collect, use, and safeguard your data.</p>
+                
+                <h4 style="margin: 25px 0 15px; color: var(--neon-blue);">Information We Collect</h4>
+                <p style="margin-bottom: 20px;">We only collect information necessary to provide our luxury travel services, including:</p>
+                <ul style="margin-bottom: 20px; padding-left: 20px;">
+                    <li>Contact information (name, email, phone)</li>
+                    <li>Travel preferences and requirements</li>
+                    <li>Payment information (processed securely via encrypted channels)</li>
+                </ul>
+                
+                <h4 style="margin: 25px 0 15px; color: var(--neon-blue);">How We Use Your Information</h4>
+                <p style="margin-bottom: 20px;">Your information is used exclusively to:</p>
+                <ul style="margin-bottom: 20px; padding-left: 20px;">
+                    <li>Process bookings and provide travel services</li>
+                    <li>Offer personalized travel recommendations</li>
+                    <li>Provide customer support and updates</li>
+                    <li>Improve our services and user experience</li>
+                </ul>
+                
+                <p>We never sell or share your personal information with third parties for marketing purposes. Your trust is our most valuable asset.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
